@@ -21,3 +21,7 @@ server:
 
 env:
   dev
+  
+girl:
+  name: 石原美里
+  age: 32
