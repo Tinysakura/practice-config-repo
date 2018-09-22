@@ -21,3 +21,7 @@ server:
 
 env:
   dev
+  
+girl:
+  name: 网修好了
+  age: 32
