@@ -31,8 +31,8 @@ server:
   port: 9091
 
 redisson:
-  host: 127.0.0.1
-  port: 6379
+  host: localhost
+  port: 6380
 
 env:
   dev
