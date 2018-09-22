@@ -30,7 +30,7 @@ eureka:
 server:
   port: 9091
 
-redission:
+redisson:
   host: localhost
   port: 6379
 
