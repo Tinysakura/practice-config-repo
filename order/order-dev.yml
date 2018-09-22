@@ -32,7 +32,7 @@ server:
 
 redisson:
   host: localhost
-  port: 6380
+  port: 6379
 
 env:
   dev
