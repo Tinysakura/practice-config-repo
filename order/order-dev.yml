@@ -11,6 +11,17 @@ spring:
     password: 19981002520qq
     url: jdbc:mysql://localhost:3306/orders?useSSL=false&characterEncoding=utf-8
 
+  redis:
+    database: 0
+    host: localhost
+    port: 6380
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   client:
     service-url:
@@ -18,6 +29,10 @@ eureka:
 
 server:
   port: 9091
+
+redission:
+  host: localhost
+  port: 6379
 
 env:
   dev
