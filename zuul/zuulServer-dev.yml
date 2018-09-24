@@ -1,3 +1,9 @@
+spring:
+  application:
+    name: zuulServer
+
+dev: dev
+
 # zuul的相关配置
 zuul:
   #自定义路由，默认路由名为/服务名/接口名
