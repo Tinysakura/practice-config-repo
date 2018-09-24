@@ -1,6 +1,12 @@
 spring:
   application:
     name: zuulServer
+    
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 dev: dev
 
@@ -18,7 +24,7 @@ zuul:
   #排除某些路由
   ignored-patterns:
     # ignored-patterns是一个set集合所以需要使用 - 来设置元素
-    - /**/product/listForOrder
+    - /**/product/list
 #management:
 #  security:
 #    enabled: false
