@@ -2,6 +2,13 @@ spring:
   application:
     name: product
 
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: dev
+      
   jpa:
     show-sql: true
 
@@ -11,10 +18,28 @@ spring:
     password: 19981002520qq
     url: jdbc:mysql://localhost:3306/product?useSSL=false&characterEncoding=utf-8
 
+  redis:
+    database: 0
+    host: localhost
+    port: 6380
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8081/eureka/
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+        
 server:
   port: 9090
+
