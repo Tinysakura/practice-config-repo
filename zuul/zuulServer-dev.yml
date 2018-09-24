@@ -12,20 +12,5 @@ dev: dev
 
 # zuul的相关配置
 zuul:
-  #自定义路由，默认路由名为/服务名/接口名
-  routes:
-    product:
-      path: /productServer/**
-      serviceId: product
-      #配置敏感头，这里设为空表示不过滤任何头信息
-      sensitiveHeaders:
-  #简洁写法
-     #product: /myProduct/**
-  #排除某些路由
-  ignored-patterns:
-    # ignored-patterns是一个set集合所以需要使用 - 来设置元素
-    - /**/product/list
-#management:
-#  security:
-#    enabled: false
+  sensitive-headers: 
 
