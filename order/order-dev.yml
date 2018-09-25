@@ -38,7 +38,7 @@ redisson:
 management:
   endpoints:
     web:
-      expose: *
+      expose: “*”
 
 env:
   dev
