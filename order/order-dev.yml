@@ -33,6 +33,12 @@ server:
 redisson:
   host: localhost
   port: 6379
+  
+# 暴露所有actuator节点
+management:
+  endpoints:
+    web:
+      expose: *
 
 env:
   dev
