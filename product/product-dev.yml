@@ -38,7 +38,7 @@ eureka:
 management:
   endpoints:
     web:
-      expose: *
+      expose: “*”
         
 server:
   port: 9090
