@@ -35,11 +35,11 @@ eureka:
       defaultZone: http://localhost:8081/eureka/
 
 # 暴露所有actuator节点
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#         include: "*“
+management:
+  endpoint:
+    web:
+      exposure:
+        include: "*" 
         
 server:
   port: 9090
