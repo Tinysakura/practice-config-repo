@@ -47,7 +47,7 @@ girl:
   name: 网修好了
   age: 32
   
-hystrisfeign:
+feign:
   hystrix:
     enabled: true
   
